@@ -1,0 +1,1 @@
+# DiplomaProjectOfTheProfessionTester [![Build status](https://ci.appveyor.com/api/projects/status/c5wxdfokui3trvi8?svg=true)](https://ci.appveyor.com/project/Aleks4404/diplomaprojectoftheprofessiontester)
