@@ -18,23 +18,21 @@ repositories {
 
 allure {
     autoconfigure = true
-    version = '2.13.3'
+    version = '2.14.0'
 
     useJUnit5 {
-        version = '2.13.3'
+        version = '2.14.0'
     }
 }
-
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
     testImplementation 'com.codeborne:selenide:5.23.0'
     testImplementation 'mysql:mysql-connector-java:8.0.25'
-    testImplementation 'postgresql:postgresql:9.1-901-1.jdbc4'
+    testImplementation 'org.postgresql:postgresql:42.2.14'
     testImplementation 'commons-dbutils:commons-dbutils:1.7'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
     testImplementation 'io.qameta.allure:allure-selenide:2.14.0'
-    testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.31'
 }
 
 test {
