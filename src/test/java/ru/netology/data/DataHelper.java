@@ -9,15 +9,6 @@ import java.util.Locale;
 
 
 public class DataHelper {
-    
-    @Value
-    public static class CardInfo {
-        String cardNumber;
-        String month;
-        String year;
-        String owner;
-        String cvv;
-    }
 
     public static String getApprovedCardNumber() {
         return "4444 4444 4444 4441";
@@ -138,5 +129,14 @@ public class DataHelper {
 
     public static CardInfo getInvalidCardForm() {
         return new CardInfo(getInvalidCardNumber(), getInvalidMonth(), getInvalidYear(), getInvalidOwner(), getInvalidCVV());
+    }
+
+    @Value
+    public static class CardInfo {
+        String cardNumber;
+        String month;
+        String year;
+        String owner;
+        String cvv;
     }
 }

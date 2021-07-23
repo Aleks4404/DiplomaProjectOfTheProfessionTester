@@ -11,10 +11,10 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SQLHelper {
-    private static Connection connect;
     private static final String URL = System.getProperty("db.url");
     private static final String USERNAME = System.getProperty("db.username");
     private static final String PASSWORD = System.getProperty("db.password");
+    private static Connection connect;
 
     private static Connection getConnection() {
         try {

@@ -7,10 +7,10 @@ import ru.netology.data.DataHelper;
 import java.time.Duration;
 
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
-import static com.codeborne.selenide.Selectors.byText;
 
 public class PagePayment {
     private SelenideElement cardNumberField = $("[placeholder = '0000 0000 0000 0000']");
