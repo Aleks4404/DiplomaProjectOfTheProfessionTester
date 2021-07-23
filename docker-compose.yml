@@ -20,7 +20,8 @@ services:
       - POSTGRES_USER=app
       - POSTGRES_PASSWORD=pass
 
-  nodejs:
-     build: ./gate-simulator
+  node-app:
+    build: gate-simulator
+    image: node-app:1.0
     ports:
       - '9999:9999'
