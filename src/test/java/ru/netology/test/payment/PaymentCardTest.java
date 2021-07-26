@@ -83,6 +83,14 @@ public class PaymentCardTest{
         payForm.checkInvalidExpirationDate();
     }
 
+    @Test // Тест невалидного месяца
+    void shouldCheckTheInvalidMonthZero() {
+        val payForm = pageMain.payByDebitCard();
+        val invalidMonth = DataHelper.getInvalidMonthZeroInfo();
+        payForm.fillFormNoSendRequest(invalidMonth);
+        payForm.checkInvalidExpirationDate();
+    }
+
     @Test // Тест с истекшим сроком действия карты
     void shouldBeCheckedWithAnExpiredExpirationDate() {
         val payForm = pageMain.payByDebitCard();
