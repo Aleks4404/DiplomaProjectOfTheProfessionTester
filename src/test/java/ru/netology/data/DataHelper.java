@@ -34,6 +34,10 @@ public class DataHelper {
         return "99";
     }
 
+    public static String getInvalidMonthZero() {
+        return "00";
+    }
+
     public static String getEmptyMonthvalue() {
         return " ";
     }
@@ -103,6 +107,10 @@ public class DataHelper {
 
     public static CardInfo getInvalidMonthInfo() {
         return new CardInfo(getApprovedCardNumber(), getInvalidMonth(), getvalidYear(), getvalidOwner(), getvalidCVV());
+    }
+
+    public static CardInfo getInvalidMonthZeroInfo() {
+        return new CardInfo(getApprovedCardNumber(), getInvalidMonthZero(), getvalidYear(), getvalidOwner(), getvalidCVV());
     }
 
     public static CardInfo getExpiredYearInfo() {
