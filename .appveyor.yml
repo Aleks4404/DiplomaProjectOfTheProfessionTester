@@ -8,12 +8,15 @@ branches:
 
 build: off
 
+services:
+  - docker
+
 install:
-  - java -jar ./artifacts/aqa-shop.jar &
-  - chmod +x gradlew
+  - ps: sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+  - ps: sudo chmod +x /usr/local/bin/docker-compose
+  - ps: sudo docker-compose up -d
+    - sleep 20
+    - java -Dspring.datasource.url=jdbc:mysql://localhost:3306/app -jar ./artifacts/aqa-shop.jar &
 
 build_script:
-  - sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-  - sudo chmod +x /usr/local/bin/docker-compose
-  - sleep 20
-  - ./gradlew test --info -Dselenide.headless=true
+  - ./gradlew test -Dselenide.headless=true -Durlbd=jdbc:mysql://localhost:3306/app --info
