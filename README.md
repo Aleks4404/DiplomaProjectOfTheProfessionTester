@@ -48,10 +48,10 @@
 ## Запуск автотестов
 
 1. Для запуска автотестов с "MySQL",  необходимо открыть новую вкладку терминала и ввести следующую команду:
-> * `gradlew clean test -Ddb.url=jdbc:mysql://localhost:3306/app`
+> * `gradlew test -Dselenide.headless=true -Durlbd=jdbc:mysql://localhost:3306/app --info`
 
 2. Для запуска автотестов с "PostgreSQL",  необходимо открыть новую вкладку терминала и ввести следующую команду:
-> * `gradlew clean test -Ddb.url=jdbc:postgresql://localhost:5432/postgres`
+> * `gradlew test -Dselenide.headless=true -Durlbd=jdbc:postgresql://localhost:5432/app --info`
 
 ## Запуск отчета тестирования
 
@@ -64,7 +64,7 @@
 1. Для завершения работы SUT, необходимо в терминале, где был запущен SUT, ввести команду:
 > * `Ctrl+C`
 
-## Остановка контейнера
+## Остановка и удаление контейнера
 1. Для остановки работы контейнеров "Docker-Compose", необходимо ввести в терминал следующую команду: 
 
 > * `docker-compose down`
