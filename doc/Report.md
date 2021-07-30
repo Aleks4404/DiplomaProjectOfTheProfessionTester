@@ -27,11 +27,11 @@
 <details>
    <summary>Report</summary>
 
-![ScreenShot](pic/mysql.png)
+![ScreenShot](pic/PostgreSQL.png)
 
-![ScreenShot](pic/mysql1.png)
+![ScreenShot](pic/PostgreSQL1.png)
 
-![ScreenShot](pic/mysql2.png)
+![ScreenShot](pic/PostgreSQL2.png)
 </details>
 
 ## Общие рекомендации
