@@ -3,24 +3,34 @@
 ## Краткое описание
 Автоматизировано тестирование комплексного сервиса покупки тура, взаимодействующего с СУБД и API Банка.
 
-
-
 ## Статистика успешных/неуспешных кейсов
 Общее количество тест кейсов: 26
 
 ### При подключении к БД MySQL
-* ![Allure ](doc/pic/mysql.png)
-  
-* ![Allure](doc/pic/mysql1.png)
-  
-* ![Gradle](doc/pic/mysql2.png)
+> * Успешных кейсов 53.84% (14 кейсов)
+> * Неуспешных кейсов 46.16% (12 кейсов)
+<details>
+   <summary>Report</summary>
 
-* Успешных кейсов 53.84% (14 кейсов)
-* Неуспешных кейсов 46.16% (12 кейсов)
+![ScreenShot](pic/mysql.png)
+  
+![ScreenShot](pic/mysql1.png)
+  
+![ScreenShot](pic/mysql2.png)
+</details>
 
 ### При подключении к БД PostgreSQL
-Успешных кейсов 53.84% (14 кейсов)
-Неуспешных кейсов 46.15% (12 кейсов)
+> * Успешных кейсов 53.84% (14 кейсов)
+> * Неуспешных кейсов 46.16% (12 кейсов)
+<details>
+   <summary>Report</summary>
+
+![ScreenShot](pic/mysql.png)
+
+![ScreenShot](pic/mysql1.png)
+
+![ScreenShot](pic/mysql2.png)
+</details>
 
 ## Общие рекомендации
 1. Исправить орфографические ошибки ([Ошибка в слове Марракеш](https://github.com/Aleks4404/DiplomaProjectOfTheProfessionTester/issues/1))
